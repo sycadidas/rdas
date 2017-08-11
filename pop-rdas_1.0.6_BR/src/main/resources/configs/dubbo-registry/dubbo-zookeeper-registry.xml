@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <bean id="diamondMultiPropertyPlaceholderConfigurer" class="com.gome.pop.diamond.DiamondMultiPropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="order" value="3"/>
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+    
+    <bean id="dubboPortHelp" class="com.alibaba.dubbo.config.DubboPortHelp"/>
+    <dubbo:registry address="${defaultZookeeperAddress}" id="defaultZookeeperAddress" />
+    <dubbo:application name="${popRdasApplicationName}" owner="dongchao"/>
+    <dubbo:protocol name="${defaultProtocol}"  port="${defaultProtocolPort}"/>
+    
+    <!-- <bean id="dubboPortHelp" class="com.alibaba.dubbo.config.DubboPortHelp"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" id="defaultZookeeperAddress" />
+    <dubbo:application name="npop-pop-rdas" owner="sunyanchen"/>
+    <dubbo:protocol name="dubbo"  port="-1"/> -->
+</beans>
+
+	

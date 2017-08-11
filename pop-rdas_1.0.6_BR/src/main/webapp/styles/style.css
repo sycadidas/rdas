@@ -1,0 +1,80 @@
+body{
+	width: 100%;
+	height: 100%;
+	background:skyblue;
+}
+
+.bg{
+	width: 100%;
+	height: 100%;
+	
+}
+.con{
+	width:30%;
+	height:auto;
+	margin:0 auto;
+	margin-top:10%;
+	background: #fff;
+	border-radius: 30px;
+	padding:30px;
+	box-sizing: border-box;
+	position: relative;
+    box-shadow: 0px 0px 90px #1aa2ce;
+
+	
+}
+.logo{
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	background:#fff url(../images/logo.png) no-repeat center center;
+	background-size: 60%;
+	position: absolute;
+	left:50%;
+	margin-left:-100px;
+	top:-100px;
+}
+.login{
+	width:193px;
+	height: 44px;
+	position: absolute;
+	top:66px;
+	left: 50%;
+	margin-left:-90px;
+	text-indent: -999px;
+	background:url(../images/login.png) no-repeat center center;
+	}
+.wel{
+	margin-top:88px;
+	margin-bottom:30px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	font-weight:lighter;
+	text-align: center;
+	
+	
+}
+.in-b{
+	float: left;
+	width: 60%;
+}
+.yanzheng{
+	overflow: hidden;
+	display: none;
+	margin-bottom: 20px;
+}
+.yanzheng .sub{
+	float: right;
+	height: 46px;
+}
+.input-group .form-control{
+	font-size: 14px;
+	/*color:#2A6496;*/
+}
+.input-group .h_49{
+	height: 49px;
+}
+.input-group .wid{ 
+	width: 100%;
+	font-family: "微软雅黑";
+	font-weight: lighter;}
